@@ -19,7 +19,7 @@ IHost host = Host.CreateDefaultBuilder(args)
             };
             return handler;
         });
-
+        
         services.AddSingleton<ChatGPTClient>();   
         services.AddHostedService<MiraiManager>();
     }).Build();
